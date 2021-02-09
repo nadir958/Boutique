@@ -7,7 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
     <title>{% block title %}Boutique - 100% Made in morocco{% endblock %}</title>
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- Bootstrap core CSS -->
     <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/boutique.css') }}">
@@ -56,7 +56,9 @@
                     <a href="{{ path('app_login') }}">Connexion</a>|<a href="{{ path('register') }}">Inscription</a>
                 {% endif %}
             </div>
-
+            <a href="{{ path('cart') }}">
+                <img src="{{ asset('assets/img/shopping-cart.png') }}" class="cart-icon" alt="mon panier">
+            </a>
         </div>
     </nav>
 </header>
